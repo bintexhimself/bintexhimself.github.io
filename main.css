@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 1em 0;
+}
+p {
+    margin: 0;
+    padding: 1em 0;
+}
+
+.btn {
+    background: #2690d4;
+    display: inline-block;
+    margin: .5em 0;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 1em 2em;
+}
+.btn:hover {
+    color: #000;
+    background: #eaeaea;
+}
+
+/* Header Showcase */
+
+#showcase {
+    min-height: 450px;
+    color: #fff;
+    text-align: center;
+
+}
+
+#showcase .bg-image {
+    position: absolute;
+    background: url('images/img4.jpg');
+    background-repeat: no repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 450px;
+    z-index: -1;
+    opacity: 0.4;
+}
+#showcase h1 {
+    padding-top: 100px;
+    padding-bottom: 0px;
+}
+
+#showcase .content-wrap, #section-a .content-wrap {
+    padding: 0 1.5em;
+}
+
+#section-a {
+    background:#eaeaea;
+    color: #333;
+    padding-bottom: 2em;
+}
+
+#section-b {
+    padding: 2em 1em 1em;
+}
+
+#section-b ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#section-b li {
+    margin-bottom: 1em;
+    background: #eaeaea;
+    color: #333;
+}
+.card-content {
+    padding: 1.5em;
+}
+
+#section-c {
+    background: #fff;
+    color: #333;
+    padding: 2em;
+}
+
+#section-d .box {
+    padding: 2em;
+}
+#section-d .box:first-child {
+    background: #2690d4;
+}
+
+#main-footer {
+    background: #000;
+    padding: 1em;
+}
+#main-footer a {
+    text-decoration: none;
+    color: #2690d4;
+}
+
+@media(min-width: 700px){
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        border: 1px solid #fff;
+        max-width: 1878px;
+    }
+    
+    #showcase .bg-image {
+        width: 80%;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+    }
+    .content-wrap, #section-b ul {
+        grid-column: 2/4;
+    }
+    .box {
+        grid-column: span 2;
+    }
+    #section-a .content-text {
+        columns: 2;
+        column-gap: 5em;
+    }
+    #section-b ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    #section-b li {
+        width: 31%;
+        padding: space-around;
+    }
+}
